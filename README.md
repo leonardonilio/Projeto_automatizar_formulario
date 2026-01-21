@@ -24,12 +24,17 @@ produtos.csv     -> uma base de dados para preencher o formulario
 
 
 
-Tecnologias usadas
+Tecnologias usadas:
 Streamlit (para o site)
+
 Selenium
+
 PyAutoGUI
+
 Pandas
+
 Python 
+
 
 Use o comando "streamlit run login.py" caso queira ver o site localmente no navegador.
 
