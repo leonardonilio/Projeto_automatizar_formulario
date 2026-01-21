@@ -76,7 +76,7 @@ preco_unitario = st.text_input("Preço Unitário", key="preco_unitario")
 custo = st.text_input("Custo", key="custo")
 obs = st.text_area("Observações (opcional)", key="obs")
 
-col1,col3 = st.columns(3)
+col1,col2,col3 = st.columns(3)
 
 # Botão enviar
 with col1:
