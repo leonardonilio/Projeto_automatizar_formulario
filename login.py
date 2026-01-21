@@ -1,6 +1,8 @@
 import streamlit as st
 import time
-st.set_page_config(page_title="Login", page_icon="🔒", layout="centered")
+
+st.set_page_config(page_title="Login", page_icon="🔒", layout="centered")#Configuração da pagina
+# Ocultar sidebar
 hide_pages_style = """
 <style>
 /* Oculta o menu lateral inteiro */
@@ -10,7 +12,7 @@ section[data-testid="stSidebar"] {
 </style>
 """
 st.markdown(hide_pages_style, unsafe_allow_html=True)
-
+# estilo
 st.markdown("""
 <style>
     .big-title {

@@ -25,6 +25,8 @@ def limpar_campos():
         "custo": "",
         "obs": "",
     })
+
+    #Serve para o botão de enviar
 def salvar_produto():
         if st.session_state["codigo"] and st.session_state["marca"] and st.session_state["tipo"] and st.session_state["categoria"] and st.session_state["preco_unitario"] and st.session_state["custo"]:
         
@@ -74,7 +76,7 @@ preco_unitario = st.text_input("Preço Unitário", key="preco_unitario")
 custo = st.text_input("Custo", key="custo")
 obs = st.text_area("Observações (opcional)", key="obs")
 
-col1, col2, col3 = st.columns(3)
+col1,col3 = st.columns(3)
 
 # Botão enviar
 with col1:
@@ -85,12 +87,9 @@ with col1:
         st.error("Complete todos os campos")
 
      
-
-
-
-# Botão cadastrar outro — usa callback correto!
-#with col2:
-    #st.button("Cadastrar outro", on_click=limpar_campos)
+        # Botão cadastrar outro — usa callback correto! -Descarte
+        #with col2: -Descarte
+             #st.button("Cadastrar outro", on_click=limpar_campos) -Descarte
 
 # Botão limpar tudo — mesma lógica
 with col3:
@@ -101,7 +100,7 @@ with col3:
     st.button("Limpar tudo", on_click=limpar_tudo)
 
 st.write("---")
-st.subheader("📦 Produtos cadastrados nesta sessão:")
+st.subheader("📦 Produtos cadastrados nesta sessão(não tem um banco de dados):")
 
 if len(st.session_state["produtos"]) > 0:
     st.table(st.session_state["produtos"])
