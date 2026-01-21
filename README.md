@@ -23,6 +23,7 @@ pegar_posicao.py -> script para pegar posição do mouse
 produtos.csv     -> uma base de dados para preencher o formulario
 
 
+
 Tecnologias usadas
 Streamlit (para o site)
 Selenium
