@@ -11,11 +11,17 @@ A automação:
 abre o navegador,vai até o site,lê um CSV e preenche o formulário sozinho, continua até acabar — ou até você apertar uma tecla para parar.
 
 Estrutura do projeto (resumido)
+
 pages            -> página do formulário
+
 login.py         -> página inicial
+
 automacao.py     -> onde a mágica tenta acontecer (Selenium + PyAutoGUI)
+
 pegar_posicao.py -> script para pegar posição do mouse
+
 produtos.csv     -> uma base de dados para preencher o formulario
+
 
 Tecnologias usadas
 Streamlit (para o site)
