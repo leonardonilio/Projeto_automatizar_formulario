@@ -89,8 +89,8 @@ with col1:
 
 
 # Botão cadastrar outro — usa callback correto!
-with col2:
-    st.button("Cadastrar outro", on_click=limpar_campos)
+#with col2:
+    #st.button("Cadastrar outro", on_click=limpar_campos)
 
 # Botão limpar tudo — mesma lógica
 with col3:
