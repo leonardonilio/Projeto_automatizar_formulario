@@ -41,5 +41,5 @@ if st.button("Entrar"):
         st.success("Login efetuado")
         st.switch_page("pages/formulario.py")
     else:
-        st.error("Informe nos campos obritório")
+        st.error("Informe nos campos obrigatórios")
 
